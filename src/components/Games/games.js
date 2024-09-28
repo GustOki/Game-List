@@ -1,8 +1,8 @@
-import Filme from '../Filme/filme'
-import './filmes.css'
+import Game from '../Game/game'
+import './games.css'
 
-const Filmes = () => {
-    const filmes = [
+const Games = () => {
+    const games = [
         {
             nome: 'Click',
             poster: 'https://m.media-amazon.com/images/S/pv-target-images/db4ecd96602086507e922d5955bda7c8aaea3fda7ee02ddacd5e2ea508c1acfe.jpg',
@@ -31,15 +31,15 @@ const Filmes = () => {
     ]
 
     return(
-        <section className="filmes">
-            <h2>Meus filmes favoritos</h2>
-            <ul className="filmes-lista">
-                {filmes.map((filme, index) => (
-                    <Filme filme={filme} key={index}/>
+        <section className="games">
+            <h2>Meus games favoritos</h2>
+            <ul className="games-lista">
+                {games.map((game, index) => (
+                    <Game game={game} key={index}/>
                 ))}
             </ul>
         </section>
     )
 }
 
-export default Filmes;
+export default Games;

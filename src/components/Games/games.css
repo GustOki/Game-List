@@ -1,15 +1,15 @@
-.filmes {
+.games {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.filmes h2 {
+.games h2 {
     margin-bottom: 20px;
 }
 
-.filmes-lista {
+.games-lista {
     width: 90%;
     margin: 0 auto;
     display: flex;

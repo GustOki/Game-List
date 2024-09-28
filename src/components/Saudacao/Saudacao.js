@@ -1,10 +1,8 @@
 import './Saudacao.css'
 
-function Saudacao({nome = 'usuário', sobrenome}) {
-    //'usuário será o valor default do parâmetro nome
-    //const {nome, sobrenome} = props;
+function Saudacao({nome = 'usuário'}) {
     return (
-      <h2 className="title">Olá, {nome} {sobrenome}!</h2>
+      <h2 className="title">Olá, {nome}!</h2>
     )
 }
 

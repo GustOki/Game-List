@@ -4,8 +4,8 @@ import Saudacao from '../Saudacao/Saudacao';
 const Header = () => {
     return (
         <header className="header">
-            <h1>Meu projeto</h1>
-            <Saudacao nome="Gustavo" sobrenome="Oki"/>
+            <h1>Game List</h1>
+            <Saudacao nome="gamer"/>
         </header>
     )
 }

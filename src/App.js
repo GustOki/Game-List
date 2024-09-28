@@ -2,7 +2,7 @@ import './App.css';
 import Mensagem from './components/Mensagem/Mensagem';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
-import Filmes from './components/Filmes/filmes';
+import Games from './components/Games/games';
 import Form from './components/Form/form';
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
       <Header/>
       <div className="container">
         <Mensagem cor="red">
-          Boa sorte nos estudos!
+          “Às vezes é melhor ter paciência do que agir impulsivamente” - The Legend of Zelda: Breath of the Wild
         </Mensagem>
-        <Filmes/>
+        <Games/>
         <section className="contato">
           <h2>Gostou? Entre em contato conosco</h2>
           <Form/>

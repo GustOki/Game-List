@@ -1,4 +1,4 @@
-.filmes-lista .filme-item {
+.games-lista .game-item {
     width: 32%;
     display: flex;
     flex-direction: column;
@@ -6,6 +6,6 @@
     justify-content: center;
 }
 
-.filmes-lista .filme-item img{
+.games-lista .game-item img{
     width: 50%;
 }
