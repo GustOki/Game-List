@@ -32,7 +32,7 @@ const Games = () => {
 
     return(
         <section className="games">
-            <h2>Meus games favoritos</h2>
+            <h2>Meus games favoritos:</h2>
             <ul className="games-lista">
                 {games.map((game, index) => (
                     <Game game={game} key={index}/>

@@ -1,13 +1,20 @@
 .mensagem {
-    width: 40%;
-    border: 1px solid #3b3939;
-    padding: 10px;
+    width: 65%;
+    border: 2px solid rgb(255, 204, 0);
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px auto;
+    margin: 2rem auto;
 }
 
 .mensagem h3 {
-    margin-right: 5px;
+    margin-right: 1rem;
+    width: 30%;
+}
+
+.mensagem p {
+    font-size: 20px;
 }
