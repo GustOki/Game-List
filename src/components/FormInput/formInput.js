@@ -1,3 +1,5 @@
+import './formInput.css'
+
 const FormInput = ({inputName, ...props}) => {
     return (
         <div className="form-input">

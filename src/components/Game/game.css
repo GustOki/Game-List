@@ -4,8 +4,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1.5rem;
 }
 
 .games-lista .game-item img{
     width: 50%;
+    transition: .5s;
+}
+
+.games-lista .game-item img:hover{
+    width: 52%;
+    transition: .5s;
+}
+
+.games-lista .game-item h4{
+    margin-top: 1rem;
 }

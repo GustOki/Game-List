@@ -1,0 +1,17 @@
+.form-input{
+    margin-bottom: 1rem;
+    width: 60%;  
+}
+
+label {
+    color: rgb(255, 204, 0);
+    font-weight: bold;
+}
+
+input {
+    border-radius: 20px;
+    border: 2px solid rgb(255, 204, 0);
+    text-align: center;
+    background-color: #b0b0b0;
+    width: 80%;   
+}

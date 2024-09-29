@@ -4,29 +4,29 @@ import './games.css'
 const Games = () => {
     const games = [
         {
-            nome: 'Click',
-            poster: 'https://m.media-amazon.com/images/S/pv-target-images/db4ecd96602086507e922d5955bda7c8aaea3fda7ee02ddacd5e2ea508c1acfe.jpg',
-            anoLancamento: '2006'
+            nome: 'Super Mario World',
+            poster: 'https://cdn.awsli.com.br/2614/2614028/produto/246277272/super-mario-world-jp_frente-a3-f2snm86y9g.jpg',
+            anoLancamento: '1990'
         },
         {
-            nome: 'Oppenheimer',
-            poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlj1YbHoItzqCZ5OAFzU479DC8HYqEIMKwOQ&s',
-            anoLancamento: '2023'
+            nome: 'The Legend of Zelda: Breath of the Wild',
+            poster: 'https://m.media-amazon.com/images/I/61Cr-6BDTML._AC_SL1024_.jpg',
+            anoLancamento: '2017'
         },
         {
-            nome: 'SpaceJam',
-            poster: 'https://m.media-amazon.com/images/I/61VX0X7EGDL._AC_UF894,1000_QL80_.jpg',
-            anoLancamento: '1996'
+            nome: 'Undertale',
+            poster: 'https://products.eneba.games/resized-products/xSwb5zB_350x200_1x-0.jpg',
+            anoLancamento: '2015'
         },
         {
-            nome: 'Vingadores: Guerra Infinita',
-            poster: 'https://br.web.img2.acsta.net/pictures/18/03/16/15/08/2019826.jpg',
-            anoLancamento: '2018'
+            nome: 'Grim Fandango Remastered',
+            poster: 'https://m.media-amazon.com/images/I/711OKwStUqL._UF1000,1000_QL80_.jpg',
+            anoLancamento: '2015'
         },
         {
-            nome: 'The Batman',
-            poster: 'https://br.web.img3.acsta.net/pictures/22/03/02/19/26/3666027.jpg',
-            anoLancamento: '2022'
+            nome: 'Super Smash Bros. Brawl',
+            poster: 'https://m.media-amazon.com/images/I/71aV0SbNGCL._AC_UF894,1000_QL80_.jpg',
+            anoLancamento: '2008'
         },
     ]
 
