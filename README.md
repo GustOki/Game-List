@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Game List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto simples em React que exibe uma lista de jogos, com filtragem de jogos com base no ano de lançamento. O projeto também inclui um formulário de contato e uma mensagem inspiradora de algum jogo famoso.
 
-## Available Scripts
+Caso queira acessar o site ativo, acesse o link: https://game-list-sigma.vercel.app
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+### 1. **Exibição de Games Favoritos**
+   - A aplicação exibe uma lista de jogos que inclui título, imagem e ano de lançamento.
+   - O usuário pode filtrar os jogos com base no ano de lançamento inserindo um valor no campo de filtro.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. **Filtragem de Games**
+   - O componente `Games` permite que o usuário filtre os jogos inserindo um ano específico.
+   - Apenas jogos lançados até o ano fornecido serão exibidos.
+   - Se nenhum jogo corresponder ao critério de filtro, uma mensagem "Nenhum game encontrado" será exibida.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. **Mensagem do Dia**
+   - Uma mensagem personalizada é exibida na seção de mensagem.
+   - A cor do texto da mensagem pode ser personalizada dinamicamente via `props`.
 
-### `npm test`
+### 4. **Formulário de Contato**
+   - O formulário coleta o nome e o email do usuário.
+   - Um botão de envio está presente, mas a funcionalidade completa de envio ainda não foi implementada.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 5. **Saudação Personalizada**
+   - A saudação exibida no cabeçalho é personalizada com o nome "gamer" ou o nome passado como `props`.
 
-### `npm run build`
+### 6. **Design Responsivo**
+   - A aplicação foi construída com um design responsivo usando CSS, sendo facilmente adaptável para diferentes tamanhos de tela.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura de Componentes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A aplicação foi dividida nos seguintes componentes:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **`App.js`**: O componente raiz que monta a estrutura principal da aplicação, incluindo o header, lista de games, mensagens, formulário de contato e footer.
 
-### `npm run eject`
+2. **`Header.js`**: Componente que renderiza o cabeçalho da aplicação e uma saudação personalizada com base no nome passado como `prop`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **`Saudacao.js`**: Componente que exibe uma saudação dinâmica. Se nenhum nome for fornecido, o nome padrão será "usuário".
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **`Mensagem.js`**: Componente que exibe uma mensagem do dia com uma cor de texto customizável via `props`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **`Games.js`**: Componente responsável por renderizar uma lista de jogos e permitir filtrá-los por ano de lançamento.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. **`Game.js`**: Componente que representa um item da lista de jogos. Exibe a imagem, nome e ano de lançamento de um jogo.
 
-## Learn More
+7. **`Form.js`**: Componente que renderiza o formulário de contato, permitindo ao usuário inserir seu nome e email.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+8. **`FormInput.js`**: Um subcomponente que encapsula os campos de entrada de texto e email.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+9. **`Button.js`**: Componente que encapsula o botão de envio do formulário.
 
-### Code Splitting
+10. **`Footer.js`**: Componente que renderiza o rodapé da página.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Como rodar o projeto na sua máquina
 
-### Analyzing the Bundle Size
+Siga as instruções abaixo para rodar o projeto localmente:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Pré-requisitos
 
-### Making a Progressive Web App
+- Node.js instalado. Caso não tenha, [instale aqui](https://nodejs.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Passos
 
-### Advanced Configuration
+1. Clone o repositório:
+   ```
+   bash git clone https://github.com/usuario/Game-List.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Entre no diretório do projeto:
+    ``` 
+    cd Game-List
 
-### Deployment
+3. Instale as dependências:
+    ```
+    npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Inicie a aplicação:
+    ```
+    npm start
 
-### `npm run build` fails to minify
+5. Inicialize seu navegador e acesse:
+    http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ATENÇÃO!
+
+Certifique-se de que você tenha o Node.js e o npm instalados em sua máquina para executar o projeto corretamente.
