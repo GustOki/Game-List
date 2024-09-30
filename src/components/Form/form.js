@@ -8,7 +8,6 @@ const Form = () => {
             <FormInput inputName="Nome" id="nome" type="text"/>
             <FormInput inputName="Email" id="email" type="email"/>
             <Button text="Enviar" type="submit"/>
-            <Button text="Clique aqui" type="button"/>
         </form>
     )
 }
