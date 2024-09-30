@@ -1,7 +1,9 @@
-import Game from '../Game/game'
-import './games.css'
+import { useState } from 'react';
+import Game from '../Game/game';
+import './games.css';
 
 const Games = () => {
+    // Definindo os games
     const games = [
         {
             nome: 'Super Mario World',
@@ -28,18 +30,48 @@ const Games = () => {
             poster: 'https://m.media-amazon.com/images/I/71aV0SbNGCL._AC_UF894,1000_QL80_.jpg',
             anoLancamento: '2008'
         },
-    ]
+    ];
 
-    return(
+    // Definindo o estado para o filtro de ano
+    const [anoLimite, setAnoLimite] = useState('');
+
+    // Função para manipular a mudança do input do ano
+    const handleAnoLimiteChange = (event) => {
+        setAnoLimite(event.target.value); // Atualiza o estado com o ano digitado
+    };
+
+    // Filtrando os games com base no ano de lançamento
+    const gamesFiltrados = games.filter((game) =>
+        anoLimite === '' || game.anoLancamento <= anoLimite
+    );
+
+    return (
         <section className="games">
             <h2>Meus games favoritos:</h2>
+            {/* Input para filtrar os games por ano */}
+            <label>
+                Mostrar jogos lançados até o ano:
+                <input
+                    type="number"
+                    placeholder="Digite o ano"
+                    value={anoLimite}
+                    onChange={handleAnoLimiteChange}
+                    className="games-filtro"
+                />
+            </label>
+            
+            {/* Lista de games filtrados */}
             <ul className="games-lista">
-                {games.map((game, index) => (
-                    <Game game={game} key={index}/>
-                ))}
+                {gamesFiltrados.length > 0 ? (
+                    gamesFiltrados.map((game, index) => (
+                        <Game game={game} key={index} />
+                    ))
+                ) : (
+                    <p>Nenhum game encontrado.</p>
+                )}
             </ul>
         </section>
-    )
-}
+    );
+};
 
 export default Games;

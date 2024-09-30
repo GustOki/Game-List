@@ -26,3 +26,13 @@
     background-color: #23196d;
     color: beige;
 }
+
+.games-filtro {
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
